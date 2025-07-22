@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0px solid #554a59;
+}
+
+.jogador,
+.computador {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #554a59;
+  border-radius: 80px;
+  gap: 32px;
+  padding: 5rem;
+  background-color: #554a59;
+  height: 28rem;
+  width: 28rem;
+}
+
+.jogador,
+button {
+  color: #8596a6;
+  align-items: center;
+}
+
+.computador {
+  color: #bfae99;
+  align-items: center;
+}
+
+body {
+  background-color: #261f25;
+  padding: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.jogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #554a59;
+  border-radius: 15px;
+  padding: 32px;
+  gap: 80px;
+}
+
+.x {
+  color: #bea7b9;
+  font-size: 128px;
+}
+
+.pontuacaoJogador,
+.pontuacaoComputador {
+  color: #bea7b9;
+  font-size: 32px;
+}
+
+#modal {
+  padding: 1rem 2rem;
+  background-color: oklch(81% 0.117 11.638);
+  border-radius: 20px;
+  font-size: 48px;
+  color: #554a59;
+  filter: drop-shadow(0 00 20px oklch(81% 0.117 11.638));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (hover: none) {
+  .jogo {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    width: 90vw;
+  }
+  .jogador,
+  .computador {
+    padding: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .x {
+    font-size: 28px;
+  }
+}

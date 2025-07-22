@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpô</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/224150e09c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="jogo">
+      <div class="jogador">
+        <h2 class="pontuacaoJogador">
+          PONTUAÇÃO JOGADOR: <span id="playerScore"> 0 </span>
+        </h2>
+        <button id="pedra">
+          <i class="fa-regular fa-3x fa-hand-back-fist pedra"></i>
+        </button>
+        <button id="papel">
+          <i class="fa-regular fa-3x fa-hand"></i>
+        </button>
+        <button id="tesoura">
+          <i class="fa-regular fa-3x fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="x">
+        <h1>X</h1>
+      </div>
+      <div class="computador">
+        <h2 class="pontuacaoComputador">
+          PONTUAÇÃO COMPUTADOR: <span id="computerScore"> 0 </span>
+        </h2>
+        <i
+          id="pedraComputador"
+          class="fa-regular fa-3x fa-hand-back-fist pedra"
+        ></i>
+        <i id="papelComputador" class="fa-regular fa-3x fa-hand"></i>
+        <i id="tesouraComputador" class="fa-regular fa-3x fa-hand-scissors"></i>
+      </div>
+    </div>
+    <div id="modal"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
