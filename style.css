@@ -3,40 +3,44 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0px solid #554a59;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .jogador,
 .computador {
   display: flex;
   flex-direction: column;
-  border: 4px solid #554a59;
+  border: 4px solid #fff7db;
   border-radius: 80px;
   gap: 32px;
-  padding: 5rem;
-  background-color: #554a59;
-  height: 28rem;
-  width: 28rem;
+  padding: 3rem;
+  background-color: #ffeeb6;
+  height: 34rem;
+  width: 29rem;
 }
 
 .jogador,
-button {
-  color: #8596a6;
+.jogador button {
+  color: #fd9860;
   align-items: center;
 }
 
-.computador {
-  color: #bfae99;
+.computador,
+.computador button {
+  color: #f0cc51;
   align-items: center;
 }
 
 body {
-  background-color: #261f25;
+  background-image: url("fundo.jpg");
+  background-size: 1600px;
   padding: 3rem;
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   min-height: 100svh;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 button {
@@ -49,30 +53,44 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 4px solid #554a59;
   border-radius: 15px;
   padding: 32px;
   gap: 80px;
 }
 
 .x {
-  color: #bea7b9;
+  color: #912139;
   font-size: 128px;
 }
 
 .pontuacaoJogador,
 .pontuacaoComputador {
-  color: #bea7b9;
+  color: #912139;
   font-size: 32px;
+}
+
+.regras {
+  color: #912139;
+  border: 2px solid #ffeeb6;
+  border-radius: 32px;
+  background-color: #ffeeb6;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  height: 8rem;
+  width: 70rem;
+  text-align: center;
 }
 
 #modal {
   padding: 1rem 2rem;
-  background-color: oklch(81% 0.117 11.638);
+  background-color: #b8dcd2;
   border-radius: 20px;
   font-size: 48px;
   color: #554a59;
-  filter: drop-shadow(0 00 20px oklch(81% 0.117 11.638));
+  filter: drop-shadow(0 00 20px #b8dcd2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,5 +116,9 @@ button {
 
   .x {
     font-size: 28px;
+  }
+
+  .regras {
+    display: none;
   }
 }

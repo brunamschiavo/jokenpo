@@ -17,19 +17,67 @@
     ></script>
   </head>
   <body>
+    <div class="regras">
+      REGRAS:
+      <div>
+        ✌🏻 Tesoura <br />corta<br />
+        papel ✋🏻
+      </div>
+      <div>
+        ✋🏻Papel <br />cobre<br />
+        pedra 👊🏻
+      </div>
+      <div>
+        👊🏻 Pedra <br />esmaga<br />
+        lagarto 🤏🏻
+      </div>
+      <div>
+        🤏🏻 Lagarto <br />envenena<br />
+        Spock 🖖🏻
+      </div>
+      <div>🖖🏻 Spock <br />esmaga<br />tesoura ✌🏻</div>
+      <div>
+        ✌🏻 Tesoura <br />decapita<br />
+        lagarto 🤏🏻
+      </div>
+      <div>
+        🤏🏻 Lagarto <br />come<br />
+        papel ✋🏻
+      </div>
+      <div>✋🏻 Papel <br />refuta <br />Spock 🖖🏻</div>
+      <div>
+        🖖🏻 Spock <br />vaporiza<br />
+        pedra 👊🏻
+      </div>
+      <div>
+        👊🏻 Pedra <br />amassa<br />
+        tesoura ✌🏻
+      </div>
+    </div>
     <div class="jogo">
       <div class="jogador">
         <h2 class="pontuacaoJogador">
-          PONTUAÇÃO JOGADOR: <span id="playerScore"> 0 </span>
+          PONTUAÇÃO SHELDON: <span id="playerScore"> 0 </span>
         </h2>
         <button id="pedra">
           <i class="fa-regular fa-3x fa-hand-back-fist pedra"></i>
+          PEDRA
         </button>
         <button id="papel">
           <i class="fa-regular fa-3x fa-hand"></i>
+          PAPEL
         </button>
         <button id="tesoura">
           <i class="fa-regular fa-3x fa-hand-scissors"></i>
+          TESOURA
+        </button>
+        <button id="spock">
+          <i class="fa-regular fa-3x fa-hand-spock"></i>
+          SPOCK
+        </button>
+        <button id="lizard">
+          <i class="fa-regular fa-3x fa-hand-lizard"></i>
+          LAGARTO
         </button>
       </div>
       <div class="x">
@@ -37,14 +85,28 @@
       </div>
       <div class="computador">
         <h2 class="pontuacaoComputador">
-          PONTUAÇÃO COMPUTADOR: <span id="computerScore"> 0 </span>
+          PONTUAÇÃO PENNY: <span id="computerScore"> 0 </span>
         </h2>
-        <i
-          id="pedraComputador"
-          class="fa-regular fa-3x fa-hand-back-fist pedra"
-        ></i>
-        <i id="papelComputador" class="fa-regular fa-3x fa-hand"></i>
-        <i id="tesouraComputador" class="fa-regular fa-3x fa-hand-scissors"></i>
+        <button id="pedraComputador">
+          <i class="fa-regular fa-3x fa-hand-back-fist pedra"></i>
+          PEDRA
+        </button>
+        <button id="papelComputador">
+          <i class="fa-regular fa-3x fa-hand"></i>
+          PAPEL
+        </button>
+        <button id="tesouraComputador">
+          <i class="fa-regular fa-3x fa-hand-scissors"></i>
+          TESOURA
+        </button>
+        <button id="spockComputador">
+          <i class="fa-regular fa-3x fa-hand-spock"></i>
+          SPOCK
+        </button>
+        <button id="lizardComputador">
+          <i class="fa-regular fa-3x fa-hand-lizard"></i>
+          LAGARTO
+        </button>
       </div>
     </div>
     <div id="modal"></div>
